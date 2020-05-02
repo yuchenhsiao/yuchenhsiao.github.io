@@ -1,0 +1,23 @@
+body {
+    background-color: #f1c0de;
+
+}
+
+.centered {
+	position: absolute;
+	top: 22%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	font-size: 60px;
+}
+
+.bg {
+	text-align: center;
+	margin: auto;
+	width: 100%;
+}
+
+.responsive {
+width: 100%;
+height: auto;
+}

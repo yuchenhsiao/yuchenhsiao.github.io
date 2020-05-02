@@ -1,0 +1,125 @@
+<!-- DEVELOPER: Yu-Chen Hsiao, IS117-004, Spring 2020 -->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="destination.css">
+
+    <title>Travel:Europe</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <a class="navbar-brand" href="#">Travel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="main.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="destinations.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Destinations
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="asia.html">Asia</a>
+            <a class="dropdown-item" href="europe.html">Europe</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<body>
+    <header>
+		<h1><center>Europe</center></h1>
+	</header>
+<main>
+</main>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <a href="https://theculturetrip.com/europe/spain/"><img src="https://c4.wallpaperflare.com/wallpaper/127/425/227/architecture-spain-city-art-park-travel-barcelona-attractions-high-angle-photography-of-city-wallpaper-preview.jpg" style="width:100%"></a>
+        <div class="text">Spain</div>
+      </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <a href="https://theculturetrip.com/europe/united-kingdom/england/"><img src="https://indietravelpodcast.com/wp-content/uploads/2016/04/Dollarphotoclub_England-1920x1272.jpg" style="width:100%"></a>
+      <div class="text">England</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <a href="https://theculturetrip.com/europe/norway/"><img src="https://cdn.cnn.com/cnnnext/dam/assets/181128110146-12-norway-skiing-travel.jpg" style="width:100%"></a>
+      <div class="text">Norway</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6 </div>
+      <a href="https://theculturetrip.com/europe/belgium/"><img src="https://steemitimages.com/DQmbfrzJDoWC815ypdvcRGTK7vHQJooBsZ4KFNiRC8DDBjz/18480329960_f8682bc10e_b.jpg" style="width:100%"></a>
+      <div class="text">Belgium</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <a href="https://theculturetrip.com/europe/austria/"><img src="https://i.pinimg.com/originals/10/01/b4/1001b4231b14fdbf39ca11ffc4e75299.jpg" style="width:100%"></a>
+      <div class="text">Austria</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <a href="https://theculturetrip.com/europe/greece/"><img src="https://c4.wallpaperflare.com/wallpaper/55/365/257/tourism-sea-sky-vacation-wallpaper-preview.jpg" style="width:100%"></a>
+      <div class="text">Greece</div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3500); 
+    }
+    </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <br/>
+<footer>
+	<center><p style="color: white;">&copy; 2020, YuChen Hsiao</p></center>
+</footer>
+
+
+</body>
+</html>
